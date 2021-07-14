@@ -36,7 +36,7 @@ A follow along from the "Python Testing With PyTest" book - with relevant notes 
 
 - FAILED (F) -  The test did not run successfully (or XPASS + strict)
 
-- SKIPPED(s) - The test was skipped 
+- SKIPPED(s) - The test was skipped  
 
 - xfail (x): The test was not supposed to pass, ran and failed
 
