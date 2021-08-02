@@ -21,3 +21,12 @@ def test_unique_id_2():
     uid = tasks.unique_id()
     # make sure it isnt in the list of existing ids
     assert uid not in ids
+
+
+@pytest.mark.xfail(tasks.__version__ < '0.2.0', reason ='not supported until version 0.2.')
+def test_unique_id_1():
+    """Calling unique_id() twice should return different numbers"""
+    id_1 = tasks.unique_id()
+    id_2 = tasks.unique_id()
+    assert id_1 != id_2
+
