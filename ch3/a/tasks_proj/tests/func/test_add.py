@@ -21,3 +21,7 @@ def test_add_increases_count(db_with_3_tasks):
 
     # THEN the count increases by 1
     assert tasks.count() == 4
+
+""" Try to push as much into the GIVEN as possible. It makes
+the test more readable and maintainable. assert or excpetion in the fixture results in an ERROR,
+while an assert or exception in the test results in a FAIL. You only want to see FAILS for legit reasons"""
